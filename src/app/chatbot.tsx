@@ -1,4 +1,4 @@
-import { View, Text } from "react-native";
+import { View } from "react-native";
 import { BasePage } from "@/components/layout/BasePage";
 import { AppText } from "@/components/ui/AppText";
 

@@ -10,26 +10,26 @@ interface AppTextProps {
 export const AppText: React.FC<AppTextProps> = ({ children, type, style = {} }) => {
     return (
         <Text style={[
-            type === "header" ? 
-                styles.header : 
-                type === "subheader" ? 
-                    styles.subheader : 
-                    styles.body, 
+            styles[type],
             style
-            ]}> {children} </Text>
+        ]}> {children} </Text>
     )
 }
 
 const styles = StyleSheet.create({
- header: {
-    fontFamily: 'Poppins_600SemiBold',
-    fontSize: 30,
-    marginTop: 10
- },
- subheader: {
-    fontFamily: 'Poppins_400Regular'
- },
- body: {
-    fontFamily: 'Poppins_200ExtraLight'
- }
-})
+    header: {
+        fontFamily: 'Poppins_600SemiBold',
+        fontSize: 30,
+        marginTop: 10
+    },
+    subheader: {
+        fontFamily: 'Poppins_500Medium',
+        fontSize: 20,
+        marginTop: 10
+    },
+    body: {
+        fontFamily: 'Poppins_200ExtraLight',
+        fontSize: 15,
+        marginTop: 10
+    }
+});
