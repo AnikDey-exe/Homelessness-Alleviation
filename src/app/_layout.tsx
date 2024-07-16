@@ -7,6 +7,7 @@ import {
     Poppins_400Regular,
     Poppins_500Medium
 } from "@expo-google-fonts/dev";
+import { SECONDARY_COLOR } from '@/lib/constants';
 
 export default function RootLayout() {
     let [fontsLoaded] = useFonts({
@@ -24,7 +25,8 @@ export default function RootLayout() {
         <SafeAreaProvider>
             <Stack screenOptions={{
                 contentStyle: {
-                    padding: 0
+                    padding: 10,
+                    backgroundColor: SECONDARY_COLOR
                 }
             }}>
                 <Stack.Screen name="index" options={{
