@@ -1,11 +1,11 @@
 import { View, Text } from "react-native";
+import { BasePage } from "@/components/layout/BasePage";
+import { AppText } from "@/components/ui/AppText";
 
 export default function Chatbot() {
     return (
-        <View>
-            <Text style={{
-                fontFamily: 'Poppins_200ExtraLight'
-            }}> Welcome dsf </Text>
-        </View>
+        <BasePage> 
+            <AppText type="header"> Chatbot </AppText>
+        </BasePage>
     )
 }
