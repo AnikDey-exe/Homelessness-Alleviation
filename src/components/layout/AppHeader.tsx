@@ -7,12 +7,7 @@ export const AppHeader: React.FC = () => {
         <View style={styles.container}>
              <Image
                 source={require("@//images/applogo.png")}
-                style={{
-                    width: 50,
-                    resizeMode: 'contain',
-                    height: 50,
-                    marginLeft: 5
-                }} />
+                style={styles.imageStyle} />
             <AppButton type="primary" onPress={()=> {
 
             }}>
@@ -26,5 +21,11 @@ const styles = StyleSheet.create({
     container: {
         flexDirection: "row",
         justifyContent: "space-between"
+    },
+    imageStyle: {
+        width: 50,
+        resizeMode: 'contain',
+        height: 50,
+        marginLeft: 0
     }
 })

@@ -7,16 +7,36 @@ export const services: ServiceConst[] = [
     {
         serviceName: "Chatbot",
         href: "chatbot",
-        image: ""
+        image: require(`@//images/chatbotlogo.png`)
     },
     {
         serviceName: "SuperMap",
         href: "map",
-        image: ""
+        image: require(`@//images/maplogo.png`)
     },
     {
         serviceName: "Events",
         href: "events",
-        image: ""
-    }
+        image: require(`@//images/eventslogo.png`)
+    },
+    // {
+    //     serviceName: "Test",
+    //     href: "events",
+    //     image: require(`@//images/eventslogo.png`)
+    // },
+    // {
+    //     serviceName: "Support",
+    //     href: "events",
+    //     image: require(`@//images/eventslogo.png`)
+    // },
+    // {
+    //     serviceName: "Report",
+    //     href: "events",
+    //     image: require(`@//images/eventslogo.png`)
+    // },
+    // {
+    //     serviceName: "Job",
+    //     href: "events",
+    //     image: require(`@//images/eventslogo.png`)
+    // }
 ];
