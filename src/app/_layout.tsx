@@ -25,7 +25,7 @@ export default function RootLayout() {
         <SafeAreaProvider>
             <Stack screenOptions={{
                 contentStyle: {
-                    padding: 10,
+                    padding: 20,
                     backgroundColor: SECONDARY_COLOR
                 }
             }}>
