@@ -40,3 +40,5 @@ export const services: ServiceConst[] = [
     //     image: require(`@//images/eventslogo.png`)
     // }
 ];
+
+export const chatStarters: string[] = ["Hi, how are you doing today?", "What's going on today?", "Hey, how are you?", "How is it going?"]

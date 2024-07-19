@@ -13,7 +13,7 @@ export const AppText: React.FC<AppTextProps> = ({ children, type, style = {} }) 
             {marginTop: 10},
             styles[type],
             style
-        ]}> {children} </Text>
+        ]}>{children}</Text>
     )
 }
 
