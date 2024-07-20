@@ -10,7 +10,7 @@ import { Link } from "expo-router";
 
 export default function Home() {
     return (
-        <BasePage>
+        <BasePage style={styles.pageContainer}>
             <AppHeader />
             <ScrollView
                 style={styles.scrollContainer}
@@ -18,9 +18,7 @@ export default function Home() {
                 showsVerticalScrollIndicator={false}>
                 <AppText type="header" style={styles.headerText}>Welcome Guest!</AppText>
                 <ChatbotGreeter />
-
                 <HomeBanner message="This application is in its development stage currently. Expect bugs and glitches to occur as well as updates." />
-
                 <AppText type="subheader" style={styles.subheaderText}>Services</AppText>
                 <FlatList
                     data={services}
@@ -37,7 +35,6 @@ export default function Home() {
                         gap: 0,
                         justifyContent: "space-between"
                     }} />
-
             </ScrollView>
         </BasePage>
     )
@@ -97,6 +94,9 @@ const ChatbotGreeter: React.FC = () => {
 }
 
 const styles = StyleSheet.create({
+    pageContainer: {
+        paddingHorizontal: 20
+    },
     headerText: {
         marginTop: 20,
         marginLeft: 0
@@ -122,7 +122,9 @@ const styles = StyleSheet.create({
     },
     bannerText: {
         color: "white",
-        marginVertical: 5
+        marginVertical: 5,
+        fontFamily: "Poppins_400Regular",
+        marginHorizontal: 5
     },
     servicesContainer: {
         marginTop: 0,
